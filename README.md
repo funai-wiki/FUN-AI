@@ -170,7 +170,7 @@ In FUN AI, miners participate in the consensus of the inference layer by broadca
 
 1) Control the mining power of the ledger layer to censor specific transactions.
 
-2) Or directly control the proportion of miners on the inference layer such that$M_{a}>M_{h}.$
+2) Or directly control the proportion of miners on the inference layer such that $M_a > M_h.$
 
 Therefore,FUN AI's resistance to censorship depends on the censorship resistance of the ledger layer.Due to the high computational power and decentralization of the ledger layer, the inference layer inherits strong censorship resistance.
 
