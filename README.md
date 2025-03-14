@@ -104,13 +104,11 @@ transaction is packaged into a block. Once the block is confirmed, the nodes del
 
 FUN AI is a network that supports the coexistence of multiple large models, and dynamically adding new models does not lead to network forks. When a new large model is introduced, FUN AI requires the addition of a new independent transaction type specific to that model, necessitating updates to both client and node software to handle this transaction type.
 
-<!-- \ln f e r _ { - } T x _ { - } T y p e _ { - } 1 AI_Model_1 Client Infer_Tx_Type_2 AI_Model_2 Infer_Tx_Type_N AI_Model_N  -->
+![infer tx](https://github.com/funai-wiki/FUN-AI/blob/main/resources/pic6.png)
 
-Node
+   Verification nodes in the network must upgrade to support the new model, while inference nodes are not required to upgrade. However, inference nodes that do not upgrade will be unable to process the new transaction type and,consequently, will not be eligible to earn rewards for those inference transactions.
 
-Verification nodes in the network must upgrade to support the new model, while inference nodes are not required to upgrade. However, inference nodes that do not upgrade will be unable to process the new transaction type and,consequently, will not be eligible to earn rewards for those inference transactions.
-
-The block structure of FUN AI remains unchanged when new transaction types are added,ensuring that subsequent blocks are compatible with already confirmed blocks.
+   The block structure of FUN AI remains unchanged when new transaction types are added,ensuring that subsequent blocks are compatible with already confirmed blocks.
 
 ## 9. Smart Contracts and Cross-Layer Communication
 
