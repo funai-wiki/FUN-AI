@@ -192,3 +192,14 @@ This network is powerful due to its structural simplicity, requiring minimal coo
 
 [5] Ali, M., Nelson, J., Shea, R., & Nelson, M. (2019). Proof of Transfer: A Blockchain Consensus Mechanism Leveraging Bitcoin. Blockstack PBC. [Online] Available: https://blockstack.org/papers/pox.pdf.
 
+### Project Structure
+
+The FUN-AI ecosystem consists of three main components, each serving a crucial role in the decentralized AI inference task network:
+
+1.	[funai-infer-chain](https://github.com/funai-wiki/funai-infer-chain): The funai-infer-chain is a second-layer blockchain dedicated to handling AI inference tasks. It manages the submission, verification, and reward distribution for inference computations in a decentralized and verifiable manner. The chain operates with a proof-of-inference mechanism to ensure the integrity and accuracy of AI-generated outputs.
+
+2.	[funai-mainchain](https://github.com/funai-wiki/funai-mainchain): The funai-mainchain serves as the primary ledger and security layer for the FUN-AI ecosystem. It operates with a Bitcoin-style Proof-of-Work (PoW) consensus mechanism to secure transactions and record inference task results on-chain.
+
+3.	[funai-sdk](https://github.com/funai-wiki/funai-sdk): The funai-sdk is a developer toolkit designed to enable seamless interaction with both the funai-infer-chain and funai-mainchain. It provides APIs and utilities for submitting inference tasks, retrieving results, and managing token-based interactions.
+
+
