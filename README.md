@@ -52,13 +52,13 @@ FUN AI adopts a hybrid OP scheme for validating the legitimacy of inference tran
 
 In FUN AI, verification nodes usually form a group. When the results from different verification nodes are inconsistent, the majority vote from the group is taken as the final result.
 
-<!-- Infer_TX Infer_TX Infer_TX Model Is Infer_TX Model Model result right? Is Infer_TX result right? Is Infer_TX result right? Check Node_1 Check Node_2 Check Node_3 YES No YES Infer_TX is valid  -->
+![infer tx](https://github.com/funai-wiki/FUN-AI/blob/main/resources/pic2.png)
 
 ## 5. Proof of Inference
 
 The inference chain in FUN AI employs a consensus mechanism called POI (Proof of Inference),which is a variation of POX (Proof of Transfer) consensus[5]. While traditional POX networks consist of miners and stakers, FUN AI's POI involves inference nodes and verification nodes.
 
-<!-- transfer &#36;XFAI to elect stake &#36;FAI Infer Node XFAI&FAI Check Node receive block reward &#36;FAI receive &#36;XFAI from Infer Node  -->
+![proof of inference](https://github.com/funai-wiki/FUN-AI/blob/main/resources/pic3.png)
 
 ### ·Inference Nodes
 
@@ -90,19 +90,13 @@ The initial block rewards are distributed as follows:
 
 The block rewards are halved every 210,000 blocks.
 
-<!-- Ledger Block after 210,000 blocks Ledger Block &#36;XFAI:15 SXFAI:7.5  -->
-
-<!-- Infer Block after 210,000 blocks Infer Block &#36;FAI:35 &#36;FAI:17.5  -->
+![reward](https://github.com/funai-wiki/FUN-AI/blob/main/resources/pic4.png)
 
 ## 7. Disk Space Reclamation
 
 FUN AI does not store the inputs and outputs of inference transactions within the blocks. Instead,only the hash of the inference transaction is included in the block. The inputs and outputs of inference transactions are temporarily stored on the nodes executing the transactions until the
 
-<table border="1" ><tr>
-<td colspan="1" rowspan="1">Block Body </td>
-</tr><tr>
-<td colspan="1" rowspan="1">Infer TX:{From: user_addressHash:transaction hash=sha256(input+output+context+prompt)}Other TX lists </td>
-</tr></table>
+![transaction](https://github.com/funai-wiki/FUN-AI/blob/main/resources/pic5.png)
 
 transaction is packaged into a block. Once the block is confirmed, the nodes delete the specific content of the inference transaction.
 
