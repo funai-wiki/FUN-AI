@@ -14,6 +14,8 @@ computation network that allows the community to participate in and benefit from
 
 The FUN AI system is composed of a two-layer architecture: the ledger layer and the inference layer,each with distinct consensus mechanisms, and they communicate through the Clarity virtual machine.
 
+![pow info](https://github.com/funai-wiki/FUN-AI/blob/main/resources/pic0.png)
+
 <!-- Pow Miner p2p Pow Miner p2p Node_1 Node_2 ... Pow Miner Node_N Ledger Chain Ledger Chain Info Virtual Virtual Virtual Virtual Machine --- p2p Machine Machine p2p Machine --- POI Infer POI Infer POI Check POI Check Infer Chain Node_1 Node_N Node_1 Node_N  -->
 
 ### 1) Ledger Layer
@@ -38,23 +40,7 @@ Inference task transactions are the native transactions of the FUN AI system, th
 
 2) The inference results obtained by the client will differ from those verified by the verification nodes, which also determine and distribute rewards.
 
-<table border="1" ><tr>
-<td colspan="1" rowspan="2">Client </td>
-<td colspan="1" rowspan="1">send Infer_TX</td>
-<td colspan="1" rowspan="2">Infer Node1 </td>
-<td colspan="1" rowspan="2">brodcast Infer_TX</td>
-<td colspan="2" rowspan="2">Infer Node_NELECTED </td>
-</tr><tr>
-<td colspan="1" rowspan="1">get Infer result_1</td>
-</tr><tr>
-<td colspan="4" rowspan="1"></td>
-<td colspan="2" rowspan="1">Infer_result_N</td>
-</tr><tr>
-<td colspan="1" rowspan="1"></td>
-<td colspan="3" rowspan="1"></td>
-<td colspan="1" rowspan="1">Check Node </td>
-<td colspan="1" rowspan="1"></td>
-</tr></table>
+![infer flow](https://github.com/funai-wiki/FUN-AI/blob/main/resources/pic1.png)
 
 ## 4.Legitimacy Check
 
